@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include demo3_app *.css
+recursive-include demo3_app *.csv
+recursive-include demo3_app *.html
+recursive-include demo3_app *.ico
+recursive-include demo3_app *.js
+recursive-include demo3_app *.json
+recursive-include demo3_app *.md
+recursive-include demo3_app *.png
+recursive-include demo3_app *.py
+recursive-include demo3_app *.svg
+recursive-include demo3_app *.txt
+recursive-exclude demo3_app *.pyc
