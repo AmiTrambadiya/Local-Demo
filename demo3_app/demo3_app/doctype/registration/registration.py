@@ -5,4 +5,5 @@
 from frappe.model.document import Document
 
 class Registration(Document):
-	pass
+	def before_save(self):
+          self.fullname = f'{self.firstname} {self.lastname or ""}'
