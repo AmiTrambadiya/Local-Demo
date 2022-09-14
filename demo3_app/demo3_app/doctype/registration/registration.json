@@ -1,25 +1,26 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:firstname",
  "creation": "2022-09-13 14:52:43.649547",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "image",
   "firstname",
   "lastname",
+  "fullname",
   "email",
   "address",
   "city",
-  "phonenumber",
+  "document",
   "column_break_20",
   "gender",
   "dob",
+  "phonenumber",
   "username",
   "state",
   "zipcode",
-  "document",
   "hobby",
   "reading",
   "learning",
@@ -29,7 +30,8 @@
   {
    "fieldname": "firstname",
    "fieldtype": "Data",
-   "label": "Firstname"
+   "label": "Firstname",
+   "unique": 1
   },
   {
    "fieldname": "lastname",
@@ -113,22 +115,24 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "image",
-   "fieldtype": "Attach Image",
-   "label": "Image"
-  },
-  {
    "fieldname": "document",
    "fieldtype": "Attach",
    "label": "Document"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "label": "Fullname",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-09-13 15:35:56.737542",
+ "modified": "2022-09-14 10:44:02.850888",
  "modified_by": "Administrator",
  "module": "demo3-app",
  "name": "Registration",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
