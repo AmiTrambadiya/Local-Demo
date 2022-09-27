@@ -1,0 +1,63 @@
+{% extends "templates/base.html" %}
+{% block title %}{% endblock %}
+{% block head_include %}
+{% endblock %}
+{% block content %}
+<div>
+    <div>
+        <form class="form-container mt-5 ml-5 " style=" margin-left: 200px;" id="form" method="post">
+            <div class="form-group">
+                <b class="mb-3 me-auto">Email Id :</b>
+                <input class="form-control mt-3" i type="Text" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <button class="btn btn-block mt-4 mb-5 text-uppercase btn-primary" id="btn" type="button"
+                onclick="myfunction()" value="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+{% for data in userlist%}
+<table style="width:90%">
+    <tr>
+
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Fullname</th>
+        <th>Gender</th>
+        <th>Date of Birth</th>
+        <th>Phonenumber</th>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zipcode</th>
+        <th>Document</th>
+        <th>Signature</th>
+        <th>Location</th>
+    </tr>
+    <tr>
+        <td>{{ data.firstname or '' }}</td>
+        <td>{{ data.lastname or '' }}</td>
+        <td>{{ data.fullname or '' }}</td>
+        <td>{{ data.gender or '' }}</td>
+        <td>{{ data.dob or '' }}</td>
+        <td>{{ data.phonenumber or '' }}</td>
+        <td>{{ data.email or '' }}</td>
+        <td>{{ data.username or '' }}</td>
+        <td>{{ data.address or '' }}</td>
+        <td>{{ data.city or '' }}</td>
+        <td>{{ data.state or '' }}</td>
+        <td>{{ data.zipcode or ''}}</td>
+        <td>{{ data.document or ''}}</td>
+        <td><img src="{{ data.signature or ''}}" height="100px" width="100px"></img></td>
+        <td>{{ data.location or '' }}</td>
+    </tr>
+</table>
+
+{% endfor%}
+{% endblock%}
