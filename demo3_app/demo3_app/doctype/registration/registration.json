@@ -1,156 +1,138 @@
 {
- "actions": [],
- "allow_rename": 1,
- "autoname": "field:firstname",
- "creation": "2022-09-13 14:52:43.649547",
- "doctype": "DocType",
- "editable_grid": 1,
- "engine": "InnoDB",
- "field_order": [
-  "firstname",
-  "lastname",
-  "fullname",
-  "email",
-  "address",
-  "city",
-  "document",
-  "column_break_20",
-  "gender",
-  "dob",
-  "phonenumber",
-  "username",
-  "state",
-  "zipcode",
-  "hobby",
-  "reading",
-  "learning",
-  "playing"
- ],
- "fields": [
-  {
-   "fieldname": "firstname",
-   "fieldtype": "Data",
-   "label": "Firstname",
-   "unique": 1
-  },
-  {
-   "fieldname": "lastname",
-   "fieldtype": "Data",
-   "label": "Lastname"
-  },
-  {
-   "fieldname": "address",
-   "fieldtype": "Data",
-   "label": "Address"
-  },
-  {
-   "fieldname": "city",
-   "fieldtype": "Link",
-   "label": "City",
-   "options": "City"
-  },
-  {
-   "fieldname": "state",
-   "fieldtype": "Data",
-   "label": "State"
-  },
-  {
-   "fieldname": "zipcode",
-   "fieldtype": "Data",
-   "label": "Zipcode"
-  },
-  {
-   "fieldname": "phonenumber",
-   "fieldtype": "Phone",
-   "label": "Phone Number"
-  },
-  {
-   "fieldname": "email",
-   "fieldtype": "Link",
-   "label": "Email",
-   "options": "User"
-  },
-  {
-   "fieldname": "dob",
-   "fieldtype": "Date",
-   "label": "Date of Birth"
-  },
-  {
-   "fieldname": "gender",
-   "fieldtype": "Select",
-   "label": "gender",
-   "options": "\nMale\nFemale"
-  },
-  {
-   "fetch_from": "email.username",
-   "fieldname": "username",
-   "fieldtype": "Data",
-   "label": "Username"
-  },
-  {
-   "fieldname": "hobby",
-   "fieldtype": "Heading",
-   "label": "Hobby"
-  },
-  {
-   "default": "0",
-   "fieldname": "reading",
-   "fieldtype": "Check",
-   "label": "Reading"
-  },
-  {
-   "default": "0",
-   "fieldname": "learning",
-   "fieldtype": "Check",
-   "label": "Learning"
-  },
-  {
-   "default": "0",
-   "fieldname": "playing",
-   "fieldtype": "Check",
-   "label": "Playing"
-  },
-  {
-   "fieldname": "column_break_20",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "document",
-   "fieldtype": "Attach",
-   "label": "Document"
-  },
-  {
-   "fieldname": "fullname",
-   "fieldtype": "Data",
-   "label": "Fullname",
-   "unique": 1
-  }
- ],
- "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2022-09-14 10:44:02.850888",
- "modified_by": "Administrator",
- "module": "demo3-app",
- "name": "Registration",
- "naming_rule": "By fieldname",
- "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
- "quick_entry": 1,
- "sort_field": "modified",
- "sort_order": "DESC",
- "states": [],
- "track_changes": 1
+    "actions": [],
+    "allow_rename": 1,
+    "autoname": "field:firstname",
+    "creation": "2022-09-13 14:52:43.649547",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "firstname",
+        "lastname",
+        "fullname",
+        "email",
+        "address",
+        "city",
+        "document",
+        "location",
+        "column_break_20",
+        "gender",
+        "dob",
+        "phonenumber",
+        "username",
+        "state",
+        "zipcode",
+        "signature"
+    ],
+    "fields": [{
+            "fieldname": "firstname",
+            "fieldtype": "Data",
+            "label": "Firstname",
+            "unique": 1
+        },
+        {
+            "fieldname": "lastname",
+            "fieldtype": "Data",
+            "label": "Lastname"
+        },
+        {
+            "fieldname": "address",
+            "fieldtype": "Data",
+            "label": "Address"
+        },
+        {
+            "fieldname": "city",
+            "fieldtype": "Link",
+            "label": "City",
+            "options": "City"
+        },
+        {
+            "fieldname": "state",
+            "fieldtype": "Data",
+            "label": "State"
+        },
+        {
+            "fieldname": "zipcode",
+            "fieldtype": "Data",
+            "label": "Zipcode"
+        },
+        {
+            "fieldname": "phonenumber",
+            "fieldtype": "Phone",
+            "label": "Phone Number"
+        },
+        {
+            "fieldname": "email",
+            "fieldtype": "Link",
+            "label": "Email",
+            "options": "User"
+        },
+        {
+            "fieldname": "dob",
+            "fieldtype": "Date",
+            "label": "Date of Birth"
+        },
+        {
+            "fieldname": "gender",
+            "fieldtype": "Select",
+            "label": "gender",
+            "options": "\nMale\nFemale"
+        },
+        {
+            "fetch_from": "email.username",
+            "fieldname": "username",
+            "fieldtype": "Data",
+            "label": "Username"
+        },
+        {
+            "fieldname": "column_break_20",
+            "fieldtype": "Column Break"
+        },
+        {
+            "fieldname": "document",
+            "fieldtype": "Attach",
+            "label": "Document"
+        },
+        {
+            "fieldname": "fullname",
+            "fieldtype": "Data",
+            "label": "Fullname",
+            "unique": 1
+        },
+        {
+            "fieldname": "signature",
+            "fieldtype": "Signature",
+            "label": "Signature"
+        },
+        {
+            "fieldname": "location",
+            "fieldtype": "Geolocation",
+            "label": "Location"
+        }
+    ],
+    "index_web_pages_for_search": 1,
+    "links": [],
+    "modified": "2022-09-26 11:52:48.356592",
+    "modified_by": "Administrator",
+    "module": "demo3-app",
+    "name": "Registration",
+    "naming_rule": "By fieldname",
+    "owner": "Administrator",
+    "permissions": [{
+        "create": 1,
+        "delete": 1,
+        "email": 1,
+        "export": 1,
+        "print": 1,
+        "read": 1,
+        "report": 1,
+        "role": "System Manager",
+        "share": 1,
+        "write": 1
+    }],
+    "quick_entry": 1,
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": [],
+    "track_changes": 1
 }
